@@ -29,7 +29,7 @@ rule "chkContract"
 	when
 		cust: customer(customer.service.endDate != null)
 	then
-	    //sr = new serviceRequest();
+	    sr = new serviceRequest();
         sr.setContractActive(chkContractEndDate(cust.service.endDate));
         System.out.println("In Chk Contract");
     end
