@@ -22,14 +22,10 @@ public class customer implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Address")
 	private java.util.List<com.samplespace.service_add_upgrade.address> address;
 
-	@org.kie.api.definition.type.Label("Customer Rule Check Result")
-	private com.samplespace.device_upgrade.custRuleChkRes ruleCheck;
 
 	@org.kie.api.definition.type.Label("Credit Score")
 	private java.lang.Integer creditScore;
 
-	//@org.kie.api.definition.type.Label("Service")
-	//private service service;
 
 	public customer() {
 	}
@@ -83,15 +79,6 @@ public class customer implements java.io.Serializable {
 		this.address = address;
 	}
 
-	public com.samplespace.device_upgrade.custRuleChkRes getRuleCheck() {
-		return this.ruleCheck;
-	}
-
-	public void setRuleCheck(
-			com.samplespace.device_upgrade.custRuleChkRes ruleCheck) {
-		this.ruleCheck = ruleCheck;
-	}
-
 	public java.lang.Integer getCreditScore() {
 		return this.creditScore;
 	}
@@ -100,20 +87,10 @@ public class customer implements java.io.Serializable {
 		this.creditScore = creditScore;
 	}
 
-	//public com.samplespace.service_add_upgrade.service getService() {
-	//	return this.service;
-	//}
-
-	//public void setService(com.samplespace.service_add_upgrade service) {
-	//	this.service = service;
-	//}
-
 	public customer(java.lang.String customerId, java.lang.String name,
 			java.util.Date dob, java.lang.String phone, java.lang.String email,
 			java.util.List<com.samplespace.service_add_upgrade.address> address,
-			com.samplespace.device_upgrade.custRuleChkRes ruleCheck,
 			java.lang.Integer creditScore
-			//,com.samplespace.service_add_upgrade.service service
 			) {
 		this.customerId = customerId;
 		this.name = name;
@@ -121,9 +98,7 @@ public class customer implements java.io.Serializable {
 		this.phone = phone;
 		this.email = email;
 		this.address = address;
-		this.ruleCheck = ruleCheck;
 		this.creditScore = creditScore;
-		//this.service = service;
 	}
 
 }
