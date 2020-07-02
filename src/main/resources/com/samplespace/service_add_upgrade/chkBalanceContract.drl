@@ -27,9 +27,9 @@ rule "chkContract"
     ruleflow-group "servReqVali"
     dialect "mvel"
 	when
-		sr: serviceRequest()
 		cc: customer(customer.service.endDate != null)
 	then
+	    sr = new serviceRequest();
         sr.setContractActive(chkContractEndDate(cc.service.endDate));
         System.out.println("In Chk Contract");
     end
