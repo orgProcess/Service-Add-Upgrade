@@ -28,7 +28,7 @@ rule "chkContract"
     dialect "mvel"
 	when
 		sr: serviceRequest()
-		cust: customer(customer.service.endDate != null, serviceRequest.contractActive != null)
+		cust: customer(customer.service.endDate != null, sr.contractActive != null)
 	then
         //sr = new serviceRequest();
         sr.setContractActive(chkContractEndDate(cust.service.endDate));
