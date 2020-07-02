@@ -22,10 +22,11 @@ public class customer implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Address")
 	private java.util.List<com.samplespace.service_add_upgrade.address> address;
 
-
 	@org.kie.api.definition.type.Label("Credit Score")
 	private java.lang.Integer creditScore;
 
+	@org.kie.api.definition.type.Label(value = "Service")
+	private com.samplespace.service_add_upgrade.service service;
 
 	public customer() {
 	}
@@ -87,11 +88,23 @@ public class customer implements java.io.Serializable {
 		this.creditScore = creditScore;
 	}
 
-	public customer(java.lang.String customerId, java.lang.String name,
-			java.util.Date dob, java.lang.String phone, java.lang.String email,
+	public com.samplespace.service_add_upgrade.service getService() {
+		return this.service;
+	}
+
+	public void setService(com.samplespace.service_add_upgrade.service service) {
+		this.service = service;
+	}
+
+	public customer(
+			java.lang.String customerId,
+			java.lang.String name,
+			java.util.Date dob,
+			java.lang.String phone,
+			java.lang.String email,
 			java.util.List<com.samplespace.service_add_upgrade.address> address,
-			java.lang.Integer creditScore
-			) {
+			java.lang.Integer creditScore,
+			com.samplespace.service_add_upgrade.service service) {
 		this.customerId = customerId;
 		this.name = name;
 		this.dob = dob;
@@ -99,6 +112,7 @@ public class customer implements java.io.Serializable {
 		this.email = email;
 		this.address = address;
 		this.creditScore = creditScore;
+		this.service = service;
 	}
 
 }
