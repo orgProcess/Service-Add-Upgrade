@@ -20,7 +20,7 @@ public class customer implements java.io.Serializable {
 	private java.lang.String email;
 
 	@org.kie.api.definition.type.Label("Address")
-	private java.util.List<com.samplespace.device_upgrade.address> address;
+	private java.util.List<com.samplespace.service_add_upgrade.address> address;
 
 	@org.kie.api.definition.type.Label("Customer Rule Check Result")
 	private com.samplespace.device_upgrade.custRuleChkRes ruleCheck;
@@ -74,12 +74,12 @@ public class customer implements java.io.Serializable {
 		this.email = email;
 	}
 
-	public java.util.List<com.samplespace.device_upgrade.address> getAddress() {
+	public java.util.List<com.samplespace.service_add_upgrade.address> getAddress() {
 		return this.address;
 	}
 
 	public void setAddress(
-			java.util.List<com.samplespace.device_upgrade.address> address) {
+			java.util.List<com.samplespace.service_add_upgrade.address> address) {
 		this.address = address;
 	}
 
@@ -110,7 +110,7 @@ public class customer implements java.io.Serializable {
 
 	public customer(java.lang.String customerId, java.lang.String name,
 			java.util.Date dob, java.lang.String phone, java.lang.String email,
-			java.util.List<com.samplespace.device_upgrade.address> address,
+			java.util.List<com.samplespace.service_add_upgrade.address> address,
 			com.samplespace.device_upgrade.custRuleChkRes ruleCheck,
 			java.lang.Integer creditScore
 			//,com.samplespace.service_add_upgrade.service service
