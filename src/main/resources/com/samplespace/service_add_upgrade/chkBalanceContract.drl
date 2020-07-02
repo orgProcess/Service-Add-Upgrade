@@ -24,7 +24,7 @@ function int getBalance(int monthlyPay, String contractEndDate) {
 }
 
 rule "chkContract"
-    ruleflow-group "chkContract"
+    ruleflow-group "servReqVali"
     dialect "mvel"
 	when
 		sr: serviceRequest()
@@ -34,5 +34,15 @@ rule "chkContract"
         System.out.println("In Chk Contract");
     end
 
-        
+rule "chkBalance"
+    ruleflow-group "servReqVali"
+    dialect "mvel"
+	when
+		sr: serviceRequest()
+		cc: customer(customer.service.endDate != null, customer.service.monthlyPayment != null)
+	then
+        sr.setAccBal(getBalance(10, cc.service.endDate));
+        System.out.println("In Chk Balance");
+    end
+  
     
