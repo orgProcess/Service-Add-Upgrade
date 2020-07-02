@@ -39,9 +39,9 @@ rule "chkBalance"
     dialect "mvel"
 	when
 		sr: serviceRequest()
-		cc: customer(customer.service.endDate != null, customer.service.monthlyPayment != null)
+		cc: customer(customer.service.endDate != null, customer.service.monthlyPay != null)
 	then
-        sr.setAccBal(getBalance(10, cc.service.endDate));
+        sr.setAccBal(getBalance(cc.service.monthlyPay, cc.service.endDate));
         System.out.println("In Chk Balance");
     end
   
