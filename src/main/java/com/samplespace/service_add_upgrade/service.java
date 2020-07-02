@@ -25,6 +25,9 @@ public class service implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("End Date")
 	private String endDate;
 
+	@org.kie.api.definition.type.Label(value = "Monthly Payment")
+	private java.lang.Integer monthlyPay;
+
 	public service() {
 	}
 
@@ -76,15 +79,25 @@ public class service implements java.io.Serializable {
 		this.endDate = endDate;
 	}
 
+	public java.lang.Integer getMonthlyPay() {
+		return this.monthlyPay;
+	}
+
+	public void setMonthlyPay(java.lang.Integer monthlyPay) {
+		this.monthlyPay = monthlyPay;
+	}
+
 	public service(java.lang.String productId, java.lang.String productName,
 			java.lang.String productDescription, java.lang.String type,
-			java.lang.String startDate, java.lang.String endDate) {
+			java.lang.String startDate, java.lang.String endDate,
+			java.lang.Integer monthlyPay) {
 		this.productId = productId;
 		this.productName = productName;
 		this.productDescription = productDescription;
 		this.type = type;
 		this.startDate = startDate;
 		this.endDate = endDate;
+		this.monthlyPay = monthlyPay;
 	}
 
 }
