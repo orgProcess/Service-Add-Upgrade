@@ -56,7 +56,7 @@
           <factAlias>customer</factAlias>
           <expressionAlias>service.endDate</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>540.5</columnWidth>
+          <columnWidth>314.5</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -68,18 +68,18 @@
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>1|2</name>
+            <name>1593733602787</name>
             <type>EXPECT</type>
           </expressionIdentifier>
           <factIdentifier>
-            <name>1|2</name>
+            <name>1593733602787</name>
             <className>com.samplespace.service_add_upgrade.serviceRequest</className>
           </factIdentifier>
           <className>java.lang.Boolean</className>
           <factAlias>serviceRequest</factAlias>
           <expressionAlias>contractActive</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>540.5</columnWidth>
+          <columnWidth>314.5</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -109,17 +109,6 @@
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
-              <name>1|2</name>
-              <className>com.samplespace.service_add_upgrade.serviceRequest</className>
-            </factIdentifier>
-            <expressionIdentifier>
-              <name>1|2</name>
-              <type>EXPECT</type>
-            </expressionIdentifier>
-            <rawValue class="string">false</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
               <name>1|1</name>
               <className>com.samplespace.service_add_upgrade.customer</className>
             </factIdentifier>
@@ -127,7 +116,17 @@
               <name>1|1</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">2020-05-01</rawValue>
+            <rawValue class="string">&quot;2020-05-01&quot;</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1593733602787</name>
+              <className>com.samplespace.service_add_upgrade.serviceRequest</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1593733602787</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
