@@ -20,10 +20,10 @@ public class service implements java.io.Serializable {
 	private java.lang.String type;
 
 	@org.kie.api.definition.type.Label("Start Date")
-	private java.util.Date startDate;
+	private String startDate;
 
 	@org.kie.api.definition.type.Label("End Date")
-	private java.util.Date endDate;
+	private String endDate;
 
 	public service() {
 	}
@@ -60,25 +60,25 @@ public class service implements java.io.Serializable {
 		this.type = type;
 	}
 
-	public java.util.Date getStartDate() {
+	public java.lang.String getStartDate() {
 		return this.startDate;
 	}
 
-	public void setStartDate(java.util.Date startDate) {
+	public void setStartDate(java.lang.String startDate) {
 		this.startDate = startDate;
 	}
 
-	public java.util.Date getEndDate() {
+	public java.lang.String getEndDate() {
 		return this.endDate;
 	}
 
-	public void setEndDate(java.util.Date endDate) {
+	public void setEndDate(java.lang.String endDate) {
 		this.endDate = endDate;
 	}
 
 	public service(java.lang.String productId, java.lang.String productName,
 			java.lang.String productDescription, java.lang.String type,
-			java.util.Date startDate, java.util.Date endDate) {
+			java.lang.String startDate, java.lang.String endDate) {
 		this.productId = productId;
 		this.productName = productName;
 		this.productDescription = productDescription;
