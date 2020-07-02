@@ -56,33 +56,7 @@
           <factAlias>customer</factAlias>
           <expressionAlias>service.endDate</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>157.25000000000003</columnWidth>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
-              <step>customer</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>service</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>monthlyPay</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>1593731133266</name>
-            <type>GIVEN</type>
-          </expressionIdentifier>
-          <factIdentifier>
-            <name>1|1</name>
-            <className>com.samplespace.service_add_upgrade.customer</className>
-          </factIdentifier>
-          <className>java.lang.Integer</className>
-          <factAlias>customer</factAlias>
-          <expressionAlias>service.monthlyPay</expressionAlias>
-          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>157.25000000000003</columnWidth>
+          <columnWidth>314.5</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -105,30 +79,7 @@
           <factAlias>serviceRequest</factAlias>
           <expressionAlias>contractActive</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>157.25000000000003</columnWidth>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
-              <step>serviceRequest</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>accBal</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>1593731212273</name>
-            <type>EXPECT</type>
-          </expressionIdentifier>
-          <factIdentifier>
-            <name>1|2</name>
-            <className>com.samplespace.service_add_upgrade.serviceRequest</className>
-          </factIdentifier>
-          <className>java.lang.Integer</className>
-          <factAlias>serviceRequest</factAlias>
-          <expressionAlias>accBal</expressionAlias>
-          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>157.25000000000003</columnWidth>
+          <columnWidth>314.5</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -169,17 +120,6 @@
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
-              <name>1|1</name>
-              <className>com.samplespace.service_add_upgrade.customer</className>
-            </factIdentifier>
-            <expressionIdentifier>
-              <name>1593731133266</name>
-              <type>GIVEN</type>
-            </expressionIdentifier>
-            <rawValue class="string">20</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
               <name>1|2</name>
               <className>com.samplespace.service_add_upgrade.serviceRequest</className>
             </factIdentifier>
@@ -187,16 +127,7 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
-              <name>1|2</name>
-              <className>com.samplespace.service_add_upgrade.serviceRequest</className>
-            </factIdentifier>
-            <expressionIdentifier>
-              <name>1593731212273</name>
-              <type>EXPECT</type>
-            </expressionIdentifier>
+            <rawValue class="string">true</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
