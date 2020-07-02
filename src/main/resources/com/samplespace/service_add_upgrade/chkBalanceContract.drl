@@ -1,2 +1,38 @@
 package com.samplespace.service_add_upgrade;
 
+import com.samplespace.service_add_upgrade.customer;
+import com.samplespace.service_add_upgrade.service;
+import com.samplespace.service_add_upgrade.serviceRequest;
+
+import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.time.temporal.ChronoUnit;
+import java.time.LocalDate;
+
+function boolean chkContractEndDate(String contractEndDate) {
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    Date passedDate = dateFormat.parse(contractEndDate);
+    return !passedDate.after(new Date());
+}
+
+function int getBalance(int monthlyPay, String contractEndDate) {
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    String currDate = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+    Date passedDate = dateFormat.parse(contractEndDate);
+    return (int) (Math.ceil((double) ChronoUnit.DAYS.between(LocalDate.parse(currDate), LocalDate.parse(contractEndDate))/30) * monthlyPay);
+
+}
+
+rule "chkContract"
+    ruleflow-group "chkContract"
+    dialect "mvel"
+	when
+		sr: serviceRequest()
+		cc: customer(customer.service.endDate != null)
+	then
+        sr.setContractActive(chkContractEndDate(cc.service.endDate));
+        System.out.println("In Chk Contract");
+    end
+
+        
+    
