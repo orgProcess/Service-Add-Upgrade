@@ -56,7 +56,7 @@
           <factAlias>customer</factAlias>
           <expressionAlias>service.endDate</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>316.0</columnWidth>
+          <columnWidth>542.0</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -79,7 +79,7 @@
           <factAlias>customer</factAlias>
           <expressionAlias>name</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>316.0</columnWidth>
+          <columnWidth>542.0</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -173,7 +173,6 @@
   </background>
   <settings>
     <type>RULE</type>
-    <ruleFlowGroup>servReqVali1</ruleFlowGroup>
     <skipFromBuild>false</skipFromBuild>
     <stateless>false</stateless>
   </settings>
