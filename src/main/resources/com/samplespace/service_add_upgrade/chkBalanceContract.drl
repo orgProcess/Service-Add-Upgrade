@@ -23,7 +23,7 @@ function int getBalance(int monthlyPay, String contractEndDate) {
 
 }
 
-rule "chkContract"
+rule "chkBalCont"
     ruleflow-group "servReqVali"
     dialect "mvel"
 	when
