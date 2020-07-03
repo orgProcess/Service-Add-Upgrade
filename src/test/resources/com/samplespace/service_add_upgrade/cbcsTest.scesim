@@ -127,6 +127,7 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
+            <rawValue class="string">null</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
@@ -172,7 +173,7 @@
   </background>
   <settings>
     <type>RULE</type>
-    <ruleFlowGroup>servReqVali</ruleFlowGroup>
+    <ruleFlowGroup>servReqVali1</ruleFlowGroup>
     <skipFromBuild>false</skipFromBuild>
     <stateless>false</stateless>
   </settings>
