@@ -24,7 +24,7 @@ function int getBalance(int monthlyPay, String contractEndDate) {
 }
 
 rule "chkBalCont"
-    ruleflow-group "servReqVali1"
+
 	when
 		c1: customer(customer.service.endDate != "")
 	then
