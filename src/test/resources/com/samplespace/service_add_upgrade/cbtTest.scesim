@@ -59,25 +59,18 @@
           <columnWidth>314.5</columnWidth>
         </FactMapping>
         <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
-              <step>customer</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>name</step>
-            </ExpressionElement>
-          </expressionElements>
+          <expressionElements/>
           <expressionIdentifier>
-            <name>1593734464953</name>
+            <name>1593734779929</name>
             <type>EXPECT</type>
           </expressionIdentifier>
           <factIdentifier>
-            <name>1|1</name>
-            <className>com.samplespace.service_add_upgrade.customer</className>
+            <name>Empty</name>
+            <className>java.lang.Void</className>
           </factIdentifier>
-          <className>java.lang.String</className>
-          <factAlias>customer</factAlias>
-          <expressionAlias>name</expressionAlias>
+          <className>java.lang.Void</className>
+          <factAlias>INSTANCE 4</factAlias>
+          <expressionAlias>PROPERTY 4</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
           <columnWidth>314.5</columnWidth>
         </FactMapping>
@@ -120,11 +113,11 @@
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
-              <name>1|1</name>
-              <className>com.samplespace.service_add_upgrade.customer</className>
+              <name>Empty</name>
+              <className>java.lang.Void</className>
             </factIdentifier>
             <expressionIdentifier>
-              <name>1593734464953</name>
+              <name>1593734779929</name>
               <type>EXPECT</type>
             </expressionIdentifier>
           </FactMappingValue>
