@@ -25,7 +25,6 @@ function int getBalance(int monthlyPay, String contractEndDate) {
 
 rule "chkBalCont"
     ruleflow-group "servReqVali1"
-    dialect "mvel"
 	when
 		c1: customer(customer.service.endDate != "")
 	then
