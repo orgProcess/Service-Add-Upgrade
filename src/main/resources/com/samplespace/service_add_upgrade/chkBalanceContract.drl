@@ -29,6 +29,7 @@ rule "chkBalCont"
 	when
 		cust: customer(customer.service.endDate != "")
 	then
+	    System.out.println("In Chk Contract");
         //sr = new serviceRequest();
         //sr.setContractActive(true);
         cust.setName("True");
